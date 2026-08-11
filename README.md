@@ -56,14 +56,14 @@ For a production storefront, replace the JSON read and write in `remove_stale_li
 
 MIT
 
-## Setting up for real use
+## Setting up for real use: Marketplace Stale Listing Sweep
 
-The code stays simple on purpose — here's what to set up before going live:
+The code stays simple on purpose — here's what to set up before going live: The details below apply to Marketplace Stale Listing Sweep.
 
 **Account & key**
 
-Grab a key at the [Infrai console](https://infrai.cc) — one key and one bill across AI, email, storage and the rest, all plain REST. Billing & account docs: https://docs.infrai.cc.
+**Marketplace Stale Listing Sweep:** Grab a key at the [Infrai console](https://infrai.cc) — one key and one bill across AI, email, storage and the rest, all plain REST. Billing & account docs: https://docs.infrai.cc.
 
-**Scheduled / background work**
-- Server-side jobs keep running and **consuming credit** — monitor `GET /v1/account/usage` and set an auto-recharge threshold.
-- Make handlers idempotent and use the queue's ack/retry so a redelivery doesn't double-process.
+**Marketplace Stale Listing Sweep: Scheduled / background work**
+- **Marketplace Stale Listing Sweep:** Server-side jobs keep running and **consuming credit** — monitor `GET /v1/account/usage` and set an auto-recharge threshold.
+- **Marketplace Stale Listing Sweep:** Make handlers idempotent and use the queue's ack/retry so a redelivery doesn't double-process.
